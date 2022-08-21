@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.*;
 
-class DuplicateNumber{
+class DuplicateItems{
     public static void main(String[] args){
         int arr[] = {4,5,5,32,1,4,32,32};
         int n = arr.length;
@@ -29,6 +31,7 @@ class DuplicateNumber{
             duplicateNumber.add(-1);
             return duplicateNumber;
         }
+        Collections.sort(duplicateNumber);
         return duplicateNumber;
     }
 }
