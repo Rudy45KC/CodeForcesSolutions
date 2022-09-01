@@ -1,4 +1,4 @@
-package ArrayProblems;
+
 
 import java.lang.reflect.Array;
 
@@ -55,16 +55,5 @@ class MergeSort{
         divide(arr, si, mid);
         divide(arr, mid+1, ei);
         conquer(arr, si, mid, ei);
-    }
-
-    public static void main(String args[]){
-        int arr[] = {6, 3, 9, 5, 2, 8};
-        int n = arr.length;
-
-    divide(arr, 0, n-1);
-    //print
-
-    for(int element : arr)
-        System.out.print(element + " ");
     }
 }
